@@ -1,6 +1,7 @@
 
 
 .btn {
+    &,
     &:link,
     &:visited {
         position: relative;
@@ -8,7 +9,12 @@
         text-decoration: none;
         padding: 1.5rem 4rem;
         display: inline-block;
-        border-radius: 10rem;
+        border-radius: $radius-large;
+
+        // change fot the <button> element
+        border: none;
+        cursor: pointer;
+
         transition: all .3s;
         backface-visibility: hidden;
         font-size: $default-font-size;
@@ -16,7 +22,7 @@
 
     &:hover {
         transform: translateY(-.2rem);
-        box-shadow: 0 1rem 2rem rgba($color-black,.2);
+        box-shadow: 0 1rem 2rem $shadow-light;
 
         &::after {
             transform: scaleX(1.4) scaleY(1.6);
@@ -24,9 +30,11 @@
         }
     }
 
-    &:active {
+    &:active,
+    &:focus {
+        outline: none;
         transform: translateY(-.2rem);
-        box-shadow: 0 .5rem 1rem rgba($color-black,.2);
+        box-shadow: 0 .5rem 1rem $shadow-light;
     }
 
     &--white {
@@ -52,7 +60,7 @@
         display: inline-block;
         height: 100%;
         width: 100%;
-        border-radius: 10rem;
+        border-radius: $radius-large;
         position: absolute;
         top: 0;
         left: 0;
@@ -84,12 +92,12 @@
     &:hover {
         background-color: $color-primary;
         color: $color-white;
-        box-shadow: 0 1rem 2rem rgba($color-black, .15);
+        box-shadow: 0 1rem 2rem $shadow-light;
         transform: translateY(-.2rem);
     }
 
     &:active {
-        box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+        box-shadow: 0 .5rem 1rem $shadow-light;
         transform: translateY(0);
     }
 
