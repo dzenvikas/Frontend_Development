@@ -43,11 +43,11 @@
 
         &:link,
         &:visited {
+            display: inline-block;
             color: $color-grey-light-1;
             background-color: $color-grey-dark-4;
             text-decoration: none;
             text-transform: uppercase;
-            display: inline-block;
         }
 
         &:hover,
@@ -63,9 +63,5 @@
         padding-top: 2rem;
         width: 80%;
         float: right;
-
-        &a {
-            color: orangered;
-        }
     }
 }
