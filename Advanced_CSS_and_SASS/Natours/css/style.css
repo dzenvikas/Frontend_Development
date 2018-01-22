@@ -44,7 +44,7 @@ body {
   font-weight: 400;
   line-height: 1.7;
   color: #777;
-  padding: 2rem; }
+  padding: 1.5rem; }
 
 .heading-primary {
   color: #fff;
@@ -574,7 +574,7 @@ body {
   z-index: 9998;
   opacity: 0;
   width: 0;
-  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+  transition: all 0.6s cubic-bezier(1, 0, 0, 1); }
 
 .navigation__list {
   position: absolute;
@@ -628,7 +628,7 @@ body {
     content: " ";
     position: absolute;
     left: 0;
-    transition: all .2s; }
+    transition: all .3s; }
   .navigation__icon::before {
     top: -.8rem; }
   .navigation__icon::after {
